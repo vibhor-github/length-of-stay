@@ -1,0 +1,62 @@
+{
+    "default_value_map": {
+        "Capillary refill rate": 0.0,
+        "Diastolic blood pressure": 59.0,
+        "Fraction inspired oxygen": 0.21,
+        "Glascow coma scale eye opening": 4,
+        "Glascow coma scale motor response": 6,
+        "Glascow coma scale total": 15,
+        "Glascow coma scale verbal response": 5,
+        "Glucose": 128.0,
+        "Heart Rate": 86,
+        "Height": 170.0,
+        "Mean blood pressure": 77.0,
+        "Oxygen saturation": 98.0,
+        "Respiratory rate": 19,
+        "Systolic blood pressure": 118.0,
+        "Temperature": 36.6,
+        "Weight": 81.0,
+        "pH": 7.4
+    },
+    "replacement_map": {
+        "Glascow coma scale eye opening": {
+            "1 No Response": 1,
+            "No Response": 1,
+            "2 To pain": 2,
+            "To Pain": 2,
+            "3 To speech": 3,
+            "To Speech": 3,
+            "4 Spontaneously": 4,
+            "Spontaneously": 4,
+            "None": 5
+        },
+        "Glascow coma scale motor response": {
+            "1 No Response": 1,
+            "2 Abnorm extensn": 2,
+            "Abnormal extension": 2,
+            "3 Abnorm flexion": 3,
+            "Abnormal Flexion": 3,
+            "4 Flex-withdraws": 4,
+            "Flex-withdraws": 4,
+            "5 Localizes Pain": 5,
+            "Localizes Pain": 5,
+            "6 Obeys Commands": 6,
+            "Obeys Commands": 6,
+            "No response": 7
+        },
+        "Glascow coma scale verbal response": {
+            "1 No Response": 1,
+            "No Response": 1,
+            "2 Incomp sounds": 2,
+            "Incomprehensible sounds": 2,
+            "3 Inapprop words": 3,
+            "Inappropriate Words": 3,
+            "4 Confused": 4,
+            "Confused": 4,
+            "5 Oriented": 5,
+            "Oriented": 5,
+            "No Response-ETT": 6,
+            "1.0 ET/Trach": 7
+        }
+    }
+}

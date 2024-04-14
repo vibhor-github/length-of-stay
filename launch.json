@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "LSTM Length of Stay",
+            "type": "python",
+            "request": "launch",
+            "module": "mimic3models.length_of_stay.main",
+            "args": [
+                "--network", "mimic3models/keras_models/lstm.py",
+                "--dim", "64",
+                "--timestep", "1.0",
+                "--depth", "1",
+                "--dropout", "0.3",
+                "--mode", "train",
+                "--batch_size", "64",
+                "--partition", "none", // regression, custom=classificaiton
+                "--verbose", "1",
+                "--save_every", "200",
+                "--epochs", "1",
+                "--train_batches", "200",
+                "--val_batches", "10",
+                "--workers", "3",
+                //"--data", "/mnt/data01/mimic-3/benchmark/length-of-stay",
+                "--data", "/mnt/data01/mimic-3/benchmark/length-of-stay",
+                "--output_dir", "/mnt/data01/mimic-3/benchmark/length-of-stay/lstm",
+                //"--load_state", "/mnt/data01/alan/lstm_regression/keras_states/k_lstm.n64.d0.3.dep1.bs256.ts1.0.partition=none.chunk01.test17.2606.state"
+                //"&>", "logs/lstm01.log"
+            ],
+            "console": "integratedTerminal"
+        },
+    ]
+}
